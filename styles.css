@@ -135,13 +135,6 @@ button {
   margin: 100px 20%;
   padding: 0 20px;
 }
-
-@media (max-width: 680px) {
-    .base-container {
-        margin: 50px 5px;
-    }
-}
-
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -177,13 +170,6 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   background-color: #442827;
-}
-
-@media (max-width: 680px) {
-    footer {
-        flex-direction: column;
-        padding: 40px;
-    }
 }
 
 footer p, footer a {
@@ -329,10 +315,22 @@ i {
     background-color: #EA672D;
 }
 
-/* Adaptabilidad para móviles en una sola columna fluida */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
     .newsletter-container {
         padding: 20px;
-        margin: 15px;
+        margin: 5px;
+    }
+
+    .base-container {
+        margin: 50px 5px;
+    }
+
+    .hero-content {
+      padding: 0px 5px;
     }
 }
