@@ -1,6 +1,7 @@
 # Tostado Landing Page
 
-Revisa el proyecto en: https://andrecjp.github.io/tostado/
+Revisa el proyecto [aquí](https://andrecjp.github.io/tostado/).
 
-Landing page para invitar a susbribirse al newsletter de Tostado, cafetería ficticia cuyo branding se desarrolló en conjunto con Almendra González.
-Puedes revisar el proyecto de branding en https://www.behance.net/gallery/234618649/Tostado-Branding-Cafeteria
+Tostado es una cafetería ficticia enfocada en café de especialidad y galletas. Este se creó como parte de un proyecto de branding realizado en conjunto con Almendra González. Puedes revisar el proyecto de branding en [Behance](https://www.behance.net/gallery/234618649/Tostado-Branding-Cafeteria).
+
+Este proyecto es una maqueta de landing page para invitar a clientes a suscribirse al newsletter de la cafetería.
