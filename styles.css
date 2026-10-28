@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.climate-crisis-<uniquifier> {
+.climate-crisis {
   font-family: "Climate Crisis", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -52,9 +52,11 @@
 h1 {
   font-family: "Climate Crisis", sans-serif;
   font-weight: 400;
+  font-variation-settings:
+    "YEAR" 1979;
   color: #442827;
   padding-bottom: 40px;
-  font-size: clamp(1.5rem, 2rem, 2.5rem);
+  font-size: clamp(1.2rem, 2rem, 2.5rem);
 }
 
 h2, h3, h4 {
@@ -110,8 +112,8 @@ button {
 }
 
 .hero-content h1 {
-  font-size: clamp(2rem, 2vw + 1rem, 3.4rem);
-  max-width: 800px;
+  font-size: clamp(1.8rem, 2vw + 1rem, 4rem);
+  max-width: 600px;
 }
 
 .sub {
@@ -239,13 +241,12 @@ i {
 /* Contenedor de la Newsletter */
 .newsletter-container {
     background-color: #C6BD56;
-    padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 15x rgba(0, 0, 0, 0.1);
     text-align: left;
     max-width: 1000px;
     width: 100%;
     box-sizing: border-box;
+    padding: 20px;
 }
 
 .newsletter-container p, .newsletter-container h1 {
@@ -302,7 +303,7 @@ i {
 /* Botón de envío */
 .newsletter-btn {
     background-color: #442827;
-    color: #ffffff;
+    color: #fff;
     border: none;
     padding: 14px;
     font-size: 16px;
@@ -320,19 +321,27 @@ i {
     footer {
         flex-direction: column;
         padding: 1rem;
+        gap: 20px;
     }
-
-    .newsletter-container {
-        padding: 20px;
-        margin: 5px;
-    }
-
+  
     .base-container {
         margin: 50px 5px;
     }
 
     .hero-content {
-      padding: 0px 5px;
+      padding: 0px 20px;
       margin: 0 10px;
+    }
+
+    .elemento-dos {
+      order: 1;
+    }
+
+    .elemento-tres {
+      order: 2;
+    }
+
+    .elemento-uno {
+      order: 3;
     }
 }
