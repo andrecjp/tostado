@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tostado</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Climate+Crisis:YEAR@1979&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css'>
+    </head>
+    <body>
+        <nav class="navbar">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="Tostado" width="160" height="auto">
+            </a>
+        </nav>
+
+        <!-- Hero Section -->
+        <header>
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>¿AMAS EL CAFÉ Y <br>LAS GALLETAS?<br><span class="sub">¡Nosotros también!</span></h1>
+                    <button type="button" onclick="document.getElementById('form').scrollIntoView({ behavior: 'smooth' });">
+                        Únetenos
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Cinta Animada (Se extiende por toda la pantalla de extremo a extremo) -->
+        <div class="ticker-wrapper">
+          <div class="ticker-scroll">
+            <div class="ticker-item">Café & Galletas &nbsp;•&nbsp;</div>
+            <div class="ticker-item">Café & Galletas &nbsp;•&nbsp;</div>
+            <div class="ticker-item">Café & Galletas &nbsp;•&nbsp;</div>
+            <div class="ticker-item">Café & Galletas &nbsp;•&nbsp;</div>
+            <div class="ticker-item">Café & Galletas &nbsp;•&nbsp;</div>
+            <div class="ticker-item">Café & Galletas &nbsp;•&nbsp;</div>
+            <div class="ticker-item">Café & Galletas &nbsp;•&nbsp;</div>
+            <div class="ticker-item">Café & Galletas &nbsp;•&nbsp;</div>
+          </div>
+          <!-- Duplicate block for seamless loop mapping -->
+          <div class="ticker-scroll" aria-hidden="true">
+            <div class="ticker-item">Café & Galletas &nbsp;•&nbsp;</div>
+            <div class="ticker-item">Café & Galletas &nbsp;•&nbsp;</div>
+            <div class="ticker-item">Café & Galletas &nbsp;•&nbsp;</div>
+            <div class="ticker-item">Café & Galletas &nbsp;•&nbsp;</div>
+            <div class="ticker-item">Café & Galletas &nbsp;•&nbsp;</div>
+            <div class="ticker-item">Café & Galletas &nbsp;•&nbsp;</div>
+            <div class="ticker-item">Café & Galletas &nbsp;•&nbsp;</div>
+            <div class="ticker-item">Café & Galletas &nbsp;•&nbsp;</div>
+          </div>
+        </div>
+
+        <!-- Los Favoritos -->
+        <div class="base-container">
+            <h1>En <span class="colored-text">Tostado</span> tenemos</h1>
+            <div class="container">
+                <div class="card">
+                    <img src="chips.png" alt="Galletas con chips de chocolate" width="100%" height="auto">
+                    <h3>Galletas</h3>
+                    <p>Tenemos una amplia variedad de sabrosas y crujientes galletas.</p>
+                </div>
+
+                <div class="card">
+                  <img src="mocca.png" alt="Mocca" width="100%" height="auto">
+                  <h3>Café</h3>
+                  <p>Tenemos una variedad de café de especialidad para que encuentres tu favorito.</p>
+                </div>
+
+                <div class="card">
+                  <img src="flat-white.png" alt="Flat white" width="100%" height="auto">
+                  <h3>Ambiente ideal</h3>
+                  <p>Nuestra cafetería ofrece un ambiente agradable y relajado, donde los sabores y los aromas son los protagonistas.</p>
+                </div>
+            </div>    
+        </div>
+
+        <!-- Visítanos -->
+        <div class="base-container">
+            <div class="container">
+                
+                <div class="content">
+                    <h1>Visítanos</h1>
+                    <dl>
+                        <dt><b>Estamos en</b></dt>
+                        <dd>Merced 268, Santiago.</dd>
+                        <dt><b>Nuestro horario es</b></dt>
+                        <dd>Lunes a viernes, de 07:00 a 19:00 hrs.</dd>
+                        <dd>Sábados y domingos de 08:00 a 13:00 hrs.</dd>
+                    </dl>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3329.4574586469557!2d-70.644793513658!3d-33.43738639110777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smerced!5e0!3m2!1ses-419!2scl!4v1792969660339!5m2!1ses-419!2scl" width="100%" height="400" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form -->
+        <div class="base-container">
+            <div class="newsletter-container" id="form">
+                <h1>Sé parte de Tostado</h1>
+                <p>Únete a nosotros y recibe actualizaciones, noticias y promociones especiales para ti. Además, por suscribirte a nuestro newsletter te regalaremos un código de descuento para tu próxima compra.</p>
+                
+                <!-- Reemplaza el '#' con la URL de tu servicio de email marketing o backend -->
+                <form action="#" method="POST" class="form-group">
+                    
+                    <!-- Campo Nombre (Opcional pero recomendado) -->
+                    <input type="text" name="nombre" class="newsletter-input" placeholder="Tu nombre" required>
+                    
+                    <!-- Campo Email con validación HTML5 obligatoria -->
+                    <input type="email" name="email" class="newsletter-input" placeholder="Tu correo electrónico" required>
+                    
+                    <!-- Casilla de privacidad legal (GDPR) -->
+                    <div class="gdpr-container">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label id="privacy-label" for="privacy">Acepto la política de privacidad y doy mi consentimiento para recibir correos comerciales.</label>
+                    </div>
+                    
+                    <!-- Botón de Suscripción -->
+                    <button type="submit" class="newsletter-btn">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+            <footer>
+                <p>© 2026 Tostado</p>
+                <a href="index.html">
+                    <img src="logo-s.png" alt="Tostado" width="100" height="100">
+                </a>
+                <ul>
+                    <li class="nav-item">
+                        <a href="#"><i class="fi fi-brands-instagram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><i class="fi fi-brands-facebook"></i></a>
+                    </li>
+                </ul>
+            </footer>
+    </body>
+</html>
+
+
