@@ -56,14 +56,26 @@ h1 {
     "YEAR" 1979;
   color: #442827;
   padding-bottom: 40px;
-  font-size: clamp(1.2rem, 2rem, 2.5rem);
+  font-size: clamp(1.8rem, 2vw + 1rem, 4rem);
+  max-width: 600px;
 }
 
-h2, h3, h4 {
+h2 {
+  font-family: "Climate Crisis", sans-serif;
+  font-weight : 400;
+  font-variation-settings:
+    "YEAR" 1979;
+  color: #442827;
+  padding-bottom: 20px;
+  font-size: clamp(1rem, 1.5vw + 1rem, 2rem);
+}
+
+h3 {
   font-family: "Bellota Text", sans-serif;
   font-weight: 700;
-  color: #442827;
   text-align: left;
+  padding: 10px 0px;
+  color: #927D14;
 }
 
 p, a {
@@ -92,6 +104,7 @@ button {
   padding: 1.5rem 32px;
   font-family: "Bellota Text", sans-serif;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .hero {
@@ -101,7 +114,7 @@ button {
   height: 80vh;
   justify-content: center;
   padding-top: 5%;
-  background-image: url(fondo-hero.png);
+  background-image: url(img/fondo-hero.png);
 }
 
 .hero-content {
@@ -109,11 +122,6 @@ button {
   flex-direction: column;
   justify-content: center;
   padding: 0 20px;
-}
-
-.hero-content h1 {
-  font-size: clamp(1.8rem, 2vw + 1rem, 4rem);
-  max-width: 600px;
 }
 
 .sub {
@@ -138,6 +146,7 @@ button {
   margin: 100px 20%;
   padding: 0 20px;
 }
+
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -156,9 +165,9 @@ button {
   border: 1px solid #C6BD56;
 }
 
-h3 {
-  padding: 10px 0px;
-  color: #927D14;
+.card img {
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 dt, dd {
