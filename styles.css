@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.climate-crisis-<uniquifier> {
+  font-family: "Climate Crisis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "YEAR" 1979;
+}
+
+.bellota-text-light {
+  font-family: "Bellota Text", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.bellota-text-regular {
+  font-family: "Bellota Text", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bellota-text-bold {
+  font-family: "Bellota Text", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.bellota-text-light-italic {
+  font-family: "Bellota Text", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.bellota-text-regular-italic {
+  font-family: "Bellota Text", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.bellota-text-bold-italic {
+  font-family: "Bellota Text", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+h1 {
+  font-family: "Climate Crisis", sans-serif;
+  font-weight: 400;
+  color: #442827;
+  padding-bottom: 40px;
+  font-size: clamp(1.5rem, 2rem, 2.5rem);
+}
+
+h2, h3, h4 {
+  font-family: "Bellota Text", sans-serif;
+  font-weight: 700;
+  color: #442827;
+  text-align: left;
+}
+
+p, a {
+  font-family: "Bellota Text", sans-serif;
+  font-weight: 400;
+  color: #442827;
+  text-align: left;
+}
+
+.navbar {
+  display: grid;
+  background-color: #442827;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  z-index: 1;
+  justify-content: center;
+}
+
+button {
+  background-color: #927D14;
+  color: #fff;
+  border: none;
+  padding: 1.5rem 32px;
+  font-family: "Bellota Text", sans-serif;
+  font-weight: 700;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: auto;
+  width: 100vw;
+  height: 80vh;
+  justify-content: center;
+  padding-top: 5%;
+  background-image: url(fondo-hero.png);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-content h1 {
+  font-size: clamp(2rem, 2vw + 1rem, 3.4rem);
+  max-width: 800px;
+}
+
+.sub {
+  font-family: "Bellota Text", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 1vw + 1rem, 2.6rem);
+}
+
+.colored-text {
+  color: #927D14;
+}
+
+.hero-content button {
+  width: 30%;
+  font-size: 16pt;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.base-container {
+  max-width: 1200px;
+  margin: 100px 20%;
+  padding: 0 20px;
+}
+
+@media (max-width: 680px) {
+    .base-container {
+        margin: 50px 5px;
+    }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15x rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  border: 1px solid #C6BD56;
+}
+
+h3 {
+  padding: 10px 0px;
+  color: #927D14;
+}
+
+dt, dd {
+  font-family: "Bellota Text", sans-serif;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #442827;
+}
+
+@media (max-width: 680px) {
+    footer {
+        flex-direction: column;
+        padding: 40px;
+    }
+}
+
+footer p, footer a {
+  color: #E9E7DA;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+i {
+  color: #E9E7DA;
+}
+
+.ticker-wrapper {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+  background-color: #C6BD56;
+  color: #442827;
+  border-top: 1px solid #C6BD56;
+  border-bottom: 1px solid #C6BD56;
+  padding: 1rem 0;
+  display: flex;
+  user-select: none;
+}
+
+.ticker-scroll {
+  display: flex;
+  flex-shrink: 0;
+  white-space: nowrap;
+  animation: ticker-loop 20s linear infinite;
+}
+
+.ticker-item {
+  font-family: "Bellota Text", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #442827; /* Deep roast accent color */
+  padding: 0 0.5rem;
+}
+
+/* Pause the translation loop when hovering over the element */
+.ticker-wrapper:hover .ticker-scroll {
+  animation-play-state: paused;
+}
+
+@keyframes ticker-loop {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+/* Contenedor de la Newsletter */
+.newsletter-container {
+    background-color: #C6BD56;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15x rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.newsletter-container p, .newsletter-container h1 {
+  padding-bottom: 20px;
+}
+
+/* Grupo del Formulario */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Campos de Entrada */
+.newsletter-input {
+    padding: 14px;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    font-family: "Bellota Text", sans-serif;
+    font-weight: 400;
+    color: #442827;
+}
+
+.newsletter-input:focus {
+    border-color: #EA672D;
+}
+
+/* Casilla de verificación GDPR */
+.gdpr-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    text-align: left;
+    margin: 8px 0;
+}
+
+.gdpr-container input {
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.gdpr-container label {
+    font-size: 12px;
+    color: #442827;
+    line-height: 1.3;
+    cursor: pointer;
+    font-family: "Bellota Text", sans-serif;
+    font-weight: 400;
+}
+
+/* Botón de envío */
+.newsletter-btn {
+    background-color: #442827;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-btn:hover {
+    background-color: #EA672D;
+}
+
+/* Adaptabilidad para móviles en una sola columna fluida */
+@media (max-width: 480px) {
+    .newsletter-container {
+        padding: 20px;
+        margin: 15px;
+    }
+}
